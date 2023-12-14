@@ -4,7 +4,15 @@ img {
 }
 html{
     scroll-behavior: smooth;
+    box-sizing: border-box;
+    
 }
+
+*{
+    box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -20,8 +28,7 @@ body {
   align-items: center;
   padding: 0 3rem;
 }
-h1,
-p {
+h1,h2,h3,p {
   margin: 0;
   padding: 0;
 }
@@ -30,7 +37,7 @@ p {
     flex-direction: column;
     align-items: center;
   background-image: url(./img/f98e4e6596b51d0ccac39bd9ab231e42.webp);
-  height: 50vh;
+  height: 56vh;
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   background-position: center;
@@ -137,6 +144,7 @@ p {
     align-items: center;
     gap: 3rem;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 @media (min-width: 768px) {
@@ -173,7 +181,7 @@ p {
 }
 
 .info_image {
-  flex-basis: 30%;
+  flex-basis: 20%;
   padding: 1rem 0;
 }
 
@@ -188,6 +196,24 @@ p {
     text-align: center;
     background-position: center;
     padding: 1rem 0;
+}
+
+.content-beneficios{
+  display: flex;
+  gap: .5rem;
+  text-align: center;
+  margin: 1.5rem 0;
+  background-color: burlywood;
+  padding: 1rem 0;
+}
+
+.img_ben{
+  width: 50px;
+}
+
+.title_ben{
+  font-weight: bold;
+  margin: .5rem 0;
 }
 
 .footer{
@@ -231,3 +257,71 @@ textarea{
     font-size: 1rem;
     margin: 1rem 0 2rem 0;
 }
+.title_productos{
+    text-align: center;
+    margin: 2rem;
+}
+.title_producto{
+    margin: 1rem 0 .5rem 0;
+}
+.productos{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem;
+    justify-content: center;
+}
+
+.card_producto{
+    width:300px;
+    text-align: center;
+    border: thin solid rgb(201, 201, 202);
+    border-radius: 1rem;
+}
+
+.card_producto img:hover{
+    transform: scale(1.1);
+}
+
+
+
+.card_producto img{
+    padding: .5rem 2rem ;
+    transition: all ease .2s;
+    height: 9rem;
+}
+.price{
+    margin: 1rem 0;
+    background-color: aqua;
+    display: inline-block;
+    padding: .5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all ease .2s;
+    border-radius: 1rem;
+}
+
+.price:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.price small{
+    font-weight: bold;
+}
+
+/* .prueba{
+    transform: translateX(30px);
+    animation: animacion 2s infinite alternate;
+}
+
+@keyframes animacion{
+    0%{
+        transform: translateX(90px);
+    }
+    
+    100%{
+        transform: translateX(10px);
+    }
+
+} */
