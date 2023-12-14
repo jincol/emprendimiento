@@ -2,7 +2,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -24,6 +26,9 @@ p {
   padding: 0;
 }
 .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   background-image: url(./img/f98e4e6596b51d0ccac39bd9ab231e42.webp);
   height: 50vh;
   background-color: rgba(0, 0, 0, 0.5);
@@ -69,9 +74,28 @@ p {
         font-size: 1rem;
   
   }
+
+  .btn_pi{
+    border: none;
+    background-color:rgb(253, 253, 253);
+    font-size: 2rem;
+    font-weight: bold;
+    color: tomato;
+    margin: 1rem 0 2rem 0;
+    padding: .5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+  }
+
+  .btn_pi:hover{
+    background-color:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+  }
+
 @media (min-width: 768px) {
     .texto {
-        padding: 5rem;
+        padding: 4rem 0 1rem 0;
         font-size: 1.5rem;
       }
 }
@@ -113,7 +137,6 @@ p {
     align-items: center;
     gap: 3rem;
     flex-direction: column;
-    
 }
 
 @media (min-width: 768px) {
@@ -131,6 +154,7 @@ p {
         font-size: 1.1rem;
         text-align: center;
         font-style: oblique;
+
       }
 }
 
@@ -151,9 +175,59 @@ p {
 .info_image {
   flex-basis: 30%;
   padding: 1rem 0;
-
 }
 
 .order{
     order: -1;
+}
+
+.objetivos{
+    background-image:url(./img/Ladrillos.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    padding: 1rem 0;
+}
+
+.footer{
+    background-image: url(./img/c.jpg);
+    display: flex;
+    justify-content: center;
+}
+
+.f p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.imputs label{
+    color:rgb(0, 0, 0) ;
+    width: 150px;
+    display:inline-block;
+    margin-right: 1rem;
+    margin: .5rem 0;
+}
+
+.imputs input{
+    width: 23rem;
+    padding: .5rem;
+    border: none;
+    border: thin solid rgba(255, 127, 80, 0.541);
+    margin: .5rem;
+}
+
+textarea{
+    width: 34rem;
+    border: thin solid rgba(255, 127, 80, 0.541);
+    display: block;
+}
+
+.btn{
+    border: none;
+    background-color: rgba(255, 127, 80, 0.541);
+    padding: 1rem 15.8rem;
+    font-size: 1rem;
+    margin: 1rem 0 2rem 0;
 }
